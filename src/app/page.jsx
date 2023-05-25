@@ -6,7 +6,8 @@ import { convertDate } from '@/_utils/convertDate';
 export const getStaticProps = async () => {
   try {
     const res = await fetch(
-      'https://us-central1-squid-apis.cloudfunctions.net/test-front-basic'
+      'https://us-central1-squid-apis.cloudfunctions.net/test-front-basic',
+      { cache: 'no-store' }
     );
     const feedData = await res.json();
     return { props: { feedData } };
