@@ -2,9 +2,7 @@
 
 This app shows Squid's instagram feed and when you hover over an image it shows information about the post and when you click you are redirected to the post.
 
-This app uses Static Generation from Next.js, i.e
-
-> The pre-rendering method that generates the HTML at build time. The pre-rendered HTML is then reused on each request.
+This app uses Dynamic Data Fetching.
 
 ## 🚀 Getting Started
 
