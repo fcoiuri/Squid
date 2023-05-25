@@ -1,5 +1,5 @@
 describe('Navigation', () => {
-  it('Should render Home Page', () => {
+  it('Should render Home Page and click on the first image', () => {
     cy.visit('http://localhost:3000/');
     cy.get('[alt="Logo da Squid"]')
       .should('have.attr', 'src')
