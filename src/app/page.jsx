@@ -3,7 +3,7 @@ import logo from '../../public/assets/logo.svg';
 import './page.scss';
 import { convertDate } from '@/_utils/convertDate';
 
-export const getStaticProps = async () => {
+const getPosts = async () => {
   try {
     const res = await fetch(
       'https://us-central1-squid-apis.cloudfunctions.net/test-front-basic',
@@ -21,7 +21,7 @@ export const getStaticProps = async () => {
 };
 
 export default async function Page() {
-  const data = await getStaticProps();
+  const data = await getPosts();
   const { feedData, error } = data.props;
   if (error) {
     return (
