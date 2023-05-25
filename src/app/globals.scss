@@ -1,0 +1,7 @@
+$fontsFolderPath: '~@squidit/css/dist/fonts';
+@import '~@squidit/css/src/scss/squid.scss';
+
+body {
+  background-image: url('../../public/assets/background.svg');
+  background-color: #fff;
+}
