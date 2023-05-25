@@ -1,34 +1,58 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Squid's Instagram feed
 
-## Getting Started
+This app shows Squid's instagram feed and when you hover over an image it shows information about the post and when you click you are redirected to the post.
 
-First, run the development server:
+This app uses Static Generation from Next.js, i.e
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+> The pre-rendering method that generates the HTML at build time. The pre-rendered HTML is then reused on each request.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Getting Started
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Clone down this repository. You will need `node` and `npm` installed globally on your machine. Open the terminal:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+1. Clone the repository
+   ```sh
+   git clone https://github.com/fcoiuri/Squid.git
+   ```
+2. Installation
 
-## Learn More
+   ```sh
+   npm install
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+   If you have yarn you can use
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   ```sh
+   yarn install
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## ⚙️ Running the tests
 
-## Deploy on Vercel
+1. Open the terminal and execute
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   ```sh
+   npm run cypress
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+   If you have yarn you can use
+
+   ```sh
+   yarn run cypress
+   ```
+
+2. Select `E2E Testing` and choose a browser.
+3. Wait to the page to open and select `page.cy.js`
+
+### 🔩 Testing Home Page
+
+This is a simple test to verify if the logo photo exists and make sure when the user clicks on any instagram post a new tab will open.
+
+## 🛠️ Built With
+
+- [Next.js](https://nextjs.org/) - The web framework used
+- [Squid Style](https://css.squidit.com.br) - CSS layout Framework
+- [Cypress](https://www.cypress.io) - The testing tool
+
+---
+
+⌨️ with ❤️ by [Iuri Mendes](https://github.com/fcoiuri)
